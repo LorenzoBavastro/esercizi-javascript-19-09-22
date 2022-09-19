@@ -25,8 +25,12 @@ for(let i=0; i<=2; i++){
 console.log(nameinput = prompt('inserire Username :'))
 console.log(passinput = prompt('inserire Password :'))
 
-if(nameinput==name || passinput==pass){
+if(nameinput==name && passinput==pass){
     console.log('login effettuato')
-}   else if(nameinput!=name || passinput!=pass){
-        console.log('Username o Password errati')
+}   /*else if(nameinput!=name || passinput!=pass){
+        console.log('Username o Password errati');
+}*/   else if(nameinput!=name){
+        console.log('username non esistente');
+}   else if(passinput!=pass){
+        console.log('password errata');
 }
