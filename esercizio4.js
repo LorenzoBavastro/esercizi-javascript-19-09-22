@@ -4,10 +4,10 @@ const prompt = require('prompt-sync')();
 
 let Numinput = 0
 console.log(Numinput = prompt('inserisci un numero'));
-
-for(let i=0; i <= Numinput; i++){
-    let n=i+1;
-    console.log(i+n);
+let n=0;
+for(let i=1; i <= Numinput; i++){
+    n=n+i;
+    console.log(n);
 }
 
 // //for(let i=0; i <= Numinput; i++){
