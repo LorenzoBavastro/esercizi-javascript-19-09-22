@@ -10,15 +10,14 @@ let Num1 = 0;
 let Num2 = 0;
 let Ope = '';
 
-
-console.log(Num1=prompt('inserire un valore1: '));
+console.log(Num1=parseInt(prompt('inserire un valore1: ')));
 console.log(Ope = prompt('inserire un operatore fra +;-;x;/; :'));
-console.log(Num2=prompt('inserire un valore2: '));
+console.log(Num2=parseInt(prompt('inserire un valore2: ')));
 
-let Sum = Num1+Num2;
-let Div = Num1&Num2;
-let Sot = Num1-Num2;
-let Mol = Num1*Num2;
+let Sum = Num1 + Num2;
+let Div = Num1 & Num2;
+let Sot = Num1 - Num2;
+let Mol = Num1 * Num2;
 
 if(Ope == '+'){
     console.log(Sum);
