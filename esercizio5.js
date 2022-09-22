@@ -3,16 +3,16 @@
 
 const prompt = require('prompt-sync')();
 
-let Numinput = 0
+let numinput = 0
 let n = 0;
-Numinput=parseInt(prompt('inserisci un numero'));
+numinput=parseInt(prompt('inserisci un numero'));
 
 
-for(let i=1; i<=Numinput; i++){
+for(let i=1; i<=numinput; i++){
     if(i%3 == 0){
-    n=n+i;
-    console.log(n);
-}
+        n=n+i;
+        console.log(n);
+    }
 }
 // 
 //else if(Numinput%3 == 1){

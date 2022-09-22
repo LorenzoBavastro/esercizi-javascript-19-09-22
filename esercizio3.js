@@ -31,6 +31,6 @@ if(nameinput==name && passinput==pass){
         console.log('Username o Password errati');
 }*/   else if(nameinput!=name){
         console.log('username non esistente');
-}   else if(passinput!=pass){
+}      else if(passinput!=pass){
         console.log('password errata');
 }
