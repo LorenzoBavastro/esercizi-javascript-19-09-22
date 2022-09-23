@@ -1,8 +1,6 @@
 const prompt = require('prompt-sync')();
 
-let carta='carta';
-let forbice= 'forbice';
-let sasso= 'sasso';
+
 let Giocatore1 = 3;
 let Giocatore2 = 3;
 let mossa1 = '';
@@ -28,7 +26,7 @@ if(Giocatore1 == 0 && Giocatore2 >= 1){
         console.log('la vittoria è del Giocatore 2! Congratulazioni! GG')
         nuovoround = 0;
         
-        
+
     } else if( Giocatore1 > 0 && Giocatore2 > 0 ){
     
 while(nuovoround >= 1){
