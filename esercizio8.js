@@ -6,16 +6,19 @@ const prompt = require("prompt-sync")();
 
 let Num1=0;
 Num1 = parseInt(prompt('inserisci un numero'));
-let Num2=1;
+
 
 for(let i=1; i <= Num1; i++) {
-    
-    if(i%i == 0 && i%1 == i){
-    for(k=1; k<=i ; k++){
-        if(i%2 == 1){
-            console.log(i)
-        }
-        }
-        
-    }
+    let counter = 0;
+        for(n=1; n<=i ; n++){
+            if(counter >2 || counter >3){
+                break;
+            } else
+            if(i%n == 0){
+            counter ++;
+            }
+        }  
+        if(counter == 2) { 
+            console.log(i);
+        }    
 }

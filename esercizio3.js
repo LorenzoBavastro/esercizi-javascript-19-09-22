@@ -9,22 +9,29 @@ let name = 'nome';
 let pass = 'pass';
 let nameinput = '';
 let passinput = '';
+const arraynames=[];
+const arraypass =[];
+
 console.log(nameinput=prompt('registrare Username :'));
 console.log(passinput=prompt('registrare Password :'));
+arraynames.push(nameinput);
+arraypass.push(passinput);
+
 
 // while(1==true){
 //     name=nameinput;
 //     pass=passinput;
 // }
 
-for(let i=0; i<=2; i++){
+for(let i=0; i<=10; i++){
     name=nameinput;
     pass=passinput;
 }
 
-console.log(nameinput = prompt('inserire Username :'))
-console.log(passinput = prompt('inserire Password :'))
-
+console.log(nameinput = prompt('inserire Username :'));
+console.log(passinput = prompt('inserire Password :'));
+console.log('tutti i nomi salvati', arraynames);
+console.log('tutte le password salvate', arraypass);
 if(nameinput==name && passinput==pass){
     console.log('login effettuato')
 }   /*else if(nameinput!=name || passinput!=pass){
